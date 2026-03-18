@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AP CS A - Midterm Exam Free Response Submission</title>
+<title>AP CS A - Mock Exam 1 Free Response Submission</title>
 <style>
   body { font-family: Arial, sans-serif; padding: 20px; }
 
@@ -112,14 +112,15 @@ pre, code {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
 </head>
 <body>
-<h2>AP CS A - Midterm Exam Free Response Submission</h2>
-<h4>[December 13th, 2025]</h4>
+<h2>AP CS A - Mock Exam 1 Free Response Submission</h2>
+<h4>[March 21st, 2026]</h4>
 
 <div class="tabs">
   <div class="tab active" data-tab="home">Home</div>
   <div class="tab disabled" data-tab="q1">Question 1</div>
   <div class="tab disabled" data-tab="q2">Question 2</div>
   <div class="tab disabled" data-tab="q3">Question 3</div>
+  <div class="tab disabled" data-tab="q4">Question 4</div>
   <div class="tab disabled" data-tab="submit">Submit</div>
 </div>
 
@@ -133,8 +134,8 @@ pre, code {
     <ol>
       <li>Make sure to write your full name above.</li>
       <li>Once ready, click on the button below to begin.</li>
-      <li>Use the tabs above to navigate through the questions, which you may do in any order.</li>
-      <li><span class="highlight">DO NOT click "Back", "Refresh" or close the window/tab at any time until you have clicked "Submit" on the last tab.</span></li>
+      <li>Use the exam tabs above to navigate through the questions, which you may do in any order.</li>
+      <li><span class="highlight">DO NOT click "Back", "Refresh" or close the browser window/tab at any time until you have clicked "Submit" on the last exam tab.</span></li>
       <li>Ensure you click on "Save & Next" for each question that you solve - you will see a check mark beside the question number, indicating that you have solved it. </li>
       <li>You may submit your work multiple times, but only the last submission will count.</li>
       <li>Once you finish ahead of time, review your answers and click "Submit". If there is extra time left, you can review, revise and resubmit your work.</li>
@@ -147,20 +148,20 @@ pre, code {
 
 <!-- QUESTION 1 -->
 <div id="q1" class="section">
-  <h2>Question 1 - Candy Canes</h2>
+  <h2>Question 1 - <span style="font-family: monospace;">VideoGame</span> Class</h2>
   The full question is on Classkick.
   <h3>Question 1a</h3>
   <div class="question-text">
-    Write the <code class="language-java">simulateOneDay</code> method <b>[3 points]</b>.
+    Write the <code class="language-java">getScore</code> method <b>[4 points]</b>.
     <br><br>
-    <pre><code class="language-java">public void simulateOneDay(int numElves)</code></pre>
+    <pre><code class="language-java">public int getScore()</code></pre>
   </div>
   <textarea id="q1a"></textarea>
   <h3>Question 1b</h3>
   <div class="question-text">
-    Write the <code class="language-java">simulateManyDays</code> method <b>[4 points]</b>.
+    Write the <code class="language-java">playManyTimes</code> method <b>[3 points]</b>.
     <br><br>
-    <pre><code class="language-java">public int simulateManyDays(int numElves, int numDays)</code></pre>
+    <pre><code class="language-java">public int playManyTimes(int num)</code></pre>
   </div>
   <textarea id="q1b"></textarea>
   <br><br>
@@ -169,36 +170,58 @@ pre, code {
 
 <!-- QUESTION 2 -->
 <div id="q2" class="section">
-  <h2>Question 2 - Drink Dispenser</h2>
+  <h2>Question 2 - <span style="font-family: monospace;">MindReader</span> Class</h2>
   The full question is on Classkick.
-  <h3>Question 2a</h3>
   <div class="question-text">
-    Write the complete constructor <code>Dispenser</code> that takes in two parameters: <code class="language-java">hc</code> and <code class="language-java">en</code> <b>[2 points]</b>.
-    <br><br>
-    <pre><code class="language-java">public Dispenser(int hc, int en)</code></pre>
+    Write the complete <code>MindReader</code> class based on the specification as described on the question found on Classkick <b>[7 points]</b>.
   </div>
-  <textarea id="q2a"></textarea>
-  <h3>Question 2b</h3>
-  <div class="question-text">
-    Write the <code>dispense</code> method <b>[5 points]</b>.
-    <br><br>
-    <pre><code class="language-java">public int dispense(String drink, int cups)</code></pre>
-  </div>
-  <textarea id="q2b"></textarea>
+  <textarea id="q2text" class="large"></textarea>
   <br><br>
   <button class="green" onclick="saveWork('q2'); goToTab('q3')">Save & Next</button>
 </div>
 
 <!-- QUESTION 3 -->
 <div id="q3" class="section">
-  <h2>Question 3 - <span style="font-family: monospace;">DashTracker</span> Class</h2>
-  The full question is on Classkick. <br><br>
+  <h2>Question 3 - <span style="font-family: monospace;">QualifyingRound</span> Class</h2>
+  The full question is on Classkick.
+  <h3>Question 3a</h3>
   <div class="question-text">
-    Write a class called <code>DashTracker</code> based on the specification as described on the question found on Classkick <b>[7 points]</b>.
+    Write the constructor for the <code class="language-java">QualifyingRound</code> class <b>[2 points]</b>.
+    <br><br>
+    <pre><code class="language-java">public QualifyingRound(String[] teams)</code></pre>
   </div>
-  <textarea id="q3text" class="large"></textarea>
+  <textarea id="q3a"></textarea>
+  <h3>Question 3b</h3>
+  <div class="question-text">
+    Write the <code class="language-java">generateGames</code> method <b>[3 points]</b>.
+    <br><br>
+    <pre><code class="language-java">public ArrayList<Game> generateGames()</code></pre>
+  </div>
+  <textarea id="q3b"></textarea>
   <br><br>
-  <button class="green" onclick="saveWork('q3'); goToTab('submit')">Save & Next</button>
+  <button class="green" onclick="saveWork('q3'); goToTab('q4')">Save & Next</button>
+</div>
+
+<!-- QUESTION 4 -->
+<div id="q4" class="section">
+  <h2>Question 4 - <span style="font-family: monospace;">BoxOfChocolate</span> Class</h2>
+  The full question is on Classkick.
+  <h3>Question 4a</h3>
+  <div class="question-text">
+    Write the <code class="language-java">moveChocolateToFirstRow</code> class <b>[3 points]</b>.
+    <br><br>
+    <pre><code class="language-java">public boolean moveChocolateToFirstRow(int column)</code></pre>
+  </div>
+  <textarea id="q4a"></textarea>
+  <h3>Question 4b</h3>
+  <div class="question-text">
+    Write the <code class="language-java">removeNextByShape</code> method <b>[3 points]</b>.
+    <br><br>
+    <pre><code class="language-java">public Chocolate removeNextByShape(String shape)</code></pre>
+  </div>
+  <textarea id="q4b"></textarea>
+  <br><br>
+  <button class="green" onclick="saveWork('q4'); goToTab('submit')">Save & Next</button>
 </div>
 
 <!-- SUBMIT TAB -->
@@ -211,7 +234,7 @@ pre, code {
 <div id="toast"></div>
 
 <script>
-let saved = { q1:false, q2:false, q3:false };
+let saved = { q1:false, q2:false, q3:false, q4:false };
 let token = null;
 
 function showToast(msg) {
@@ -282,9 +305,9 @@ function addTabHandler(textarea) {
 
 /* CHECKMARK HANDLING */
 function updateCheckmarks() {
-  const labels = { q1:"Question 1", q2:"Question 2", q3:"Question 3" };
+  const labels = { q1:"Question 1", q2:"Question 2", q3:"Question 3", q4:"Question 4" };
 
-  ['q1','q2','q3'].forEach(q => {
+  ['q1','q2','q3','q4'].forEach(q => {
     const tab = document.querySelector(`[data-tab="${q}"]`);
     tab.innerHTML = labels[q] + (saved[q] ? ' <span class="checkmark">✓</span>' : '');
   });
@@ -338,9 +361,11 @@ document.getElementById('submit-btn').addEventListener('click', async () => {
   const questions = {
     '1a': document.getElementById('q1a').value,
     '1b': document.getElementById('q1b').value,
-    '2a': document.getElementById('q2a').value,
-    '2b': document.getElementById('q2b').value,
-    '3': document.getElementById('q3text').value
+    '2': document.getElementById('q2text').value,
+    '3a': document.getElementById('q3a').value,
+    '3b': document.getElementById('q3b').value,
+    '4a': document.getElementById('q4a').value,
+    '4b': document.getElementById('q4b').value
   };
 
   const res = await fetch('/submit', {
